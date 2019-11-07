@@ -27,3 +27,8 @@ for alpha in alpha_space:
 
 # Display the plot
 display_plot(ridge_scores, ridge_scores_std)
+
+
+# Annotate the points
+for x, y, company in zip(xs, ys, companies):
+    plt.annotate(company, (x, y), fontsize=5, alpha=0.75)
